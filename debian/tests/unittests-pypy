@@ -1,0 +1,10 @@
+#!/bin/sh
+set -efu
+
+export LC_ALL=C.UTF-8
+
+cp -a tests "$ADTTMP"
+cd "$ADTTMP"
+
+echo "=== pypy ==="
+pypy -m unittest discover tests/ 2>&1

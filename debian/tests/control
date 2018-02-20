@@ -1,0 +1,8 @@
+Tests: unittests
+Depends: python-unidecode, python-all
+
+Tests: unittests-pypy
+Depends: pypy-unidecode, pypy
+
+Tests: unittests3
+Depends: python3-unidecode, python3-all
